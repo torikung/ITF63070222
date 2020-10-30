@@ -1,20 +1,25 @@
 <html>
     <head>
-        <title>Hello world</title>
+        <meta charset="UTF-8">
+        <title>ITF_63070222</title>
     </head>
     <body>
-        <h1>My First Heading</h1>
-        <p>My First Paragraph</p>
-        <img src="cat.jpg">
+        <img src="welcome.png">
+        <img src="celebrate.png">
+        <h1>ประวัติส่วนตัว</h1>
+        <p>ชื่อ : ณัฐดนัย นวลแก้ว</p>
+        <p>ชื่อเล่น : ภูมิ(ไรเด้น)</p>
         <br>
-        <a href="http://www.it.kmitl.ac.th">This is a Link</a>
+        <a href="https://www.userbenchmark.com/">นี้คือลิ้งค์ที่ผมชอบเข้าชมครับ</a>
 
-        <h2>The unordered list</h2>
-        <ul>
-            <li>Google</li>
-            <li>Yahoo</li>
-            <li>Amazon</li>
-        </ul>
-
+        <h2>เรื่องเล่าครับ</h2>
+        <p>มีคนสองคนคุยกัน</p>
+        <p>คนที่1 : เมื่อวานครับ ผมไปร้านตามสั่งมา เจอพ่อค้าอินดี้ครับ</p>
+        <p>คนที่2 : ทำไมครับ?</p>
+        <p>คนที่1 : ก็ตอนนั้นผมสั่งไปว่า "เฮีย เอาเส้นใหญ่ราดหน้าที่หนึ่ง" เฮียแกก็ผัดเส้นใหญ่ของแกไป สักพักผมตะลึงเลยครับ!</p>
+        <p>คนที่2 : ทำไมครับ!?</p>
+        <p>คนที่1 : เฮียแกยกกระทะราดหน้าเฉยเลย</p>
+        <p>คนที่2 : .... เส้นใหญ่ราดหน้า</p>
+        
     </body>
 </html>
