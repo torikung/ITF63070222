@@ -46,7 +46,7 @@
     </table>
 <div class="container">
     <tr>
-        <div align="center"><button type="button" class="btn btn-dark">เพิ่ม</button></div>
+        <div align="center"><button type="button" class="btn btn-dark" onclick="window.location.href='/form.html'">เพิ่ม</button></div>
     </tr>
 </div>
 <?php
