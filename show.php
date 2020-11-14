@@ -44,6 +44,10 @@
         }
     ?>
     </table>
+<div class="container">
+    <tr>
+        <div align="center"><button type="button" class="btn btn-dark">เพิ่ม</button></div>
+    </tr>
 </div>
 <?php
 mysqli_close($conn);
