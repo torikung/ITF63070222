@@ -29,9 +29,6 @@
                     <th width="15%"> <div align="center">Action</div></th>
                 </tr>
             </thead>
-        <div align="center">
-            <td><button type="button" class="btn btn-dark">เพิ่ม</button></td>
-        </div>
     <?php
         while($Result = mysqli_fetch_array($res))
         {
