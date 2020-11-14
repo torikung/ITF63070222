@@ -26,7 +26,7 @@
                     <th width="100"> <div align="center">Name</div></th>
                     <th width="300"> <div align="center">Comment</div></th>
                     <th width="150"> <div align="center">Link</div></th>
-                    <th width="100"> <div align="center">Action</div></th><button type="button" class="btn btn-dark">Dark</button>
+                    <th width="100"> <div align="center">Action</div><button type="button" class="btn btn-dark">Dark</button></th>
                 </tr>
             </thead>
     <?php
