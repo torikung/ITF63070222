@@ -37,6 +37,7 @@
             <td><?php echo $Result['Name'];?></div></td>
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
+            <button type="button" class="btn btn-outline-dark">ลบ</button>
         </tr>
     <?php
         }
