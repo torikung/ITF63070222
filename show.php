@@ -37,8 +37,8 @@
             <td><?php echo $Result['Name'];?></div></td>
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
-            <td><button type="button" class="btn btn-light">แก้ไข</button>&nbsp;
-                <button type="button" class="btn btn-light">ลบ</button></td>
+            <td><div align="center"><button type="button" class="btn btn-light">แก้ไข</button>&nbsp;
+                <button type="button" class="btn btn-light">ลบ</button></div></td>
         </tr>
     <?php
         }
