@@ -38,7 +38,7 @@
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
             <td><div align="center"><button type="button" class="btn btn-light">แก้ไข</button>&nbsp;
-                <form action = "insert.php" method = "post"><button type="button" class="btn btn-light">ลบ</button></div></td>
+                <form action = "delete.php" method = "post"><button type="button" class="btn btn-light">ลบ</button></div></td>
         </tr>
     <?php
         }
