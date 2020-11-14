@@ -20,7 +20,7 @@
 ?>
 <div class="container">
     <table width="600" border="1">
-        <table class="table table-dark table-striped">
+        <table class="table table-dark table-striped table-bordered">
             <thead>
                 <tr>
                     <th width="100"> <div align="center">Name</div></th>
