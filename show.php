@@ -37,7 +37,7 @@
             <td><?php echo $Result['Name'];?></div></td>
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
-            <td><div align="center"><button type="button" class="btn btn-light"><a href="window.location.href='/delete.php'">แก้ไข</a></button>&nbsp;
+            <td><div align="center"><button type="button" class="btn btn-light"><a href="delete.php">แก้ไข</a></button>&nbsp;
                 <button type="button" class="btn btn-light">ลบ</button></div></td>
         </tr>
     <?php
