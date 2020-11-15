@@ -26,7 +26,7 @@
                     <th width="100"> <div align="center">Name</div></th>
                     <th width="300"> <div align="center">Comment</div></th>
                     <th width="150"> <div align="center">Link</div></th>
-                    <th width="20%"> <div align="center">Action</div></th>
+                    <th width="15%"> <div align="center">Action</div></th>
                 </tr>
             </thead>
     <?php
@@ -37,7 +37,7 @@
             <td><?php echo $Result['Name'];?></div></td>
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
-            <td><div align="center"><button type="button" class="btn btn-light" onclick="window.location.href='/delete.php>แก้ไข</button>&nbsp;
+            <td><div align="center"><button type="button" class="btn btn-light"><a href="window.location.href='/delete.php'">แก้ไข</a></button>&nbsp;
                 <button type="button" class="btn btn-light">ลบ</button></div></td>
         </tr>
     <?php
