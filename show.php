@@ -26,7 +26,7 @@
                     <th width="100"> <div align="center">Name</div></th>
                     <th width="300"> <div align="center">Comment</div></th>
                     <th width="150"> <div align="center">Link</div></th>
-                    <th width="15%"> <div align="center">Action</div></th>
+                    <th width="20%"> <div align="center">Action</div></th>
                 </tr>
             </thead>
     <?php
