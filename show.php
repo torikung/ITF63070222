@@ -40,10 +40,9 @@
             <td><?php echo $Result['Link'];?></td>
             <td>
                 <div class = "d-inline">
-                    <form action="edit_form.php" method="post" class="d-inline"><input type="hidden" name="ID" value=<?php echo $Result['ID'];?>><button type="button" class="btn btn-light">แก้ไข</button>
-                    </form>
-                    <form action="delete.php" method="post" class="d-inline"><input type="hidden" name="ID" value=<?php echo $Result['ID'];?>><button type="submit" class="btn btn-light">ลบ</button>
-                    </form>
+                    <form action="edit_form.php" method="post" class="d-inline"><input type="hidden" name="ID" value=<?php echo $Result['ID'];?>><button type="button" class="btn btn-light">แก้ไข</button></form>
+                    &nbsp;
+                    <form action="delete.php" method="post" class="d-inline"><input type="hidden" name="ID" value=<?php echo $Result['ID'];?>><button type="submit" class="btn btn-light">ลบ</button></form>
                 </div>
             </td>
         </tr>
