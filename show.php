@@ -1,8 +1,5 @@
 <html>
 <head>
-<style>
-    .hideextra { white-space: nowrap; overflow: hidden; text-overflow:ellipsis; }
-</style>
     <title>ITF Lab</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +27,8 @@
                     <th width="100"> <div align="center">Name</div></th>
                     <th width="300"> <div align="center">Comment</div></th>
                     <th width="150"> <div align="center">Link</div></th>
-                    <th width="25%"> <div align="center">Action</div></th>
+                    <th width="100"> <div align="center">Edit</div></th>
+                    <th width="100"> <div align="center">Delete</div></th>
                 </tr>
             </thead>
     <?php
@@ -41,15 +39,13 @@
             <td><?php echo $Result['Name'];?></div></td>
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
-            <td>
-                <div class="hideextra">
-                    <form action="edit_form.php" method="post">
-                        <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
-                        <button type="button" class="btn btn-light">แก้ไข</button></form>
-                    <form action="delete.php" method="post">
-                        <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
-                        <button type="submit" class="btn btn-light">ลบ</button></form>
-                </div>
+            <td><form action="edit_form.php" method="post">
+                    <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
+                    <button type="button" class="btn btn-light">แก้ไข</button></form>
+            </td>
+            <td><form action="delete.php" method="post">
+                    <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
+                    <button type="submit" class="btn btn-light">ลบ</button></form>
             </td>
         </tr>
     <?php
