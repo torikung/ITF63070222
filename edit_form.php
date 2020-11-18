@@ -23,11 +23,10 @@ $sql = "SELECT * FROM guestbook WHERE ID='$ID'";
 $res = mysqli_query($conn, $sql);
 $comment = mysqli_fetch_array($res);
 ?>
-    <div class="container">
+    <div class="container" align="center">
         <div align="center"><h1>Edit comment</h1></div>
         <form action="edit.php" method="post" class="mt-4">
             <input type="hidden" name="ID" value=<?php echo $comment['ID'];?>>
-	<div align="center">
             <div class="form-group row">
     		<label for="inputName" class="col-sm-2 col-form-label">Name</label>
     		<div class="col-sm-10">
@@ -38,7 +37,7 @@ $comment = mysqli_fetch_array($res);
             <div class="form-group row">
     		<label for="inputComment" class="col-sm-2 col-form-label">Comment</label>
     		<div class="col-sm-10">
-                	<input type="text" name="comment" class="form-control" id="inputComment" placeholder="Enter Comment"><?php echo $comment['Comment'];?>
+                	<textarea name="comment" class="form-control" id="inputComment" placeholder="Enter Comment"><?php echo $comment['Comment'];?></textarea>
             </div>
             <div class="form-group row">
                 <label for="inputComment" class="col-sm-2 col-form-label">Link</label>
