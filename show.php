@@ -40,11 +40,7 @@
             <td><?php echo $Result['Link'];?></td>
             <td>
                 <div align="center">
-                    <form action="edit_form.php" method="post">
-                        <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
                         <button type="button" class="btn btn-light">แก้ไข</button></form>&nbsp;
-                    <form action="delete.php" method="post">
-                        <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
                         <button type="submit" class="btn btn-light">ลบ</button></form>
                 </div>
             </td>
