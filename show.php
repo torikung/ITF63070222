@@ -1,5 +1,8 @@
 <html>
 <head>
+<style>
+    .hideextra { white-space: nowrap; overflow: hidden; text-overflow:ellipsis; }
+</style>
     <title>ITF Lab</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,12 +42,14 @@
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
             <td>
-                <form action="edit_form.php" method="post">
-                    <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
-                    <button type="button" class="btn btn-light">แก้ไข</button></form>
-                <form action="delete.php" method="post">
-                    <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
-                    <button type="submit" class="btn btn-light">ลบ</button></form>
+                <div class="hideextra">
+                    <form action="edit_form.php" method="post">
+                        <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
+                        <button type="button" class="btn btn-light">แก้ไข</button></form>
+                    <form action="delete.php" method="post">
+                        <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
+                        <button type="submit" class="btn btn-light">ลบ</button></form>
+                </div>
             </td>
         </tr>
     <?php
