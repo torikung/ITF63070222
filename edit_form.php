@@ -28,15 +28,15 @@ $comment = mysqli_fetch_array($res);
         <form action="edit.php" method="post" class="mt-4">
             <input type="hidden" name="ID" value=<?php echo $comment['ID'];?>>
             <div class="form-group row">
-    			<label for="inputName" class="col-sm-2 col-form-label">Name</label>
-    			<div class="col-sm-10">
+    		<label for="inputName" class="col-sm-2 col-form-label">Name</label>
+    		<div class="col-sm-10">
                 <?php
                     echo '<input type="text" name="name" id="inputName" class="form-control" placeholder="Enter Name" value="'.$comment["Name"].'">'
                 ?>
             </div>
             <div class="form-group row">
-    			<label for="inputComment" class="col-sm-2 col-form-label">Comment</label>
-    			<div class="col-sm-10">
+    		<label for="inputComment" class="col-sm-2 col-form-label">Comment</label>
+    		<div class="col-sm-10">
                 <type="comment" name="comment" class="form-control" id="inputComment" placeholder="Enter Comment"><?php echo $comment['Comment'];?>
             </div>
             <div class="form-group row">
