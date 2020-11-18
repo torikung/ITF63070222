@@ -39,13 +39,15 @@
             <td><?php echo $Result['Name'];?></div></td>
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
-            <td><form action="edit_form.php" method="post">
-                    <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
-                    <button type="button" class="btn btn-light">แก้ไข</button></form>
+            <td><div align="center">
+                    <form action="edit_form.php" method="post">
+                        <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
+                        <button type="button" class="btn btn-light">แก้ไข</button></form></div>
             </td>
-            <td><form action="delete.php" method="post">
-                    <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
-                    <button type="submit" class="btn btn-light">ลบ</button></form>
+            <td><div align="center">
+                    <form action="delete.php" method="post">
+                        <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
+                        <button type="submit" class="btn btn-light">ลบ</button></form></div>
             </td>
         </tr>
     <?php
