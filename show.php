@@ -42,7 +42,7 @@
             <td><div align="center">
                     <form action="edit_form.php" method="post">
                         <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
-                        <button type="button" class="btn btn-light">แก้ไข</button></form></div>
+                        <button type="submit" class="btn btn-light">แก้ไข</button></form></div>
             </td>
             <td><div align="center">
                     <form action="delete.php" method="post">
