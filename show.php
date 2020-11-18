@@ -19,7 +19,7 @@
     $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <div class="container">
-    <h1>DataBase Table</h1>
+    <div align="center"><h1>DataBase Table</h1></div>
     <table width="400" border="1">
         <table class="table table-dark table-striped table-bordered">
             <thead>
@@ -38,8 +38,8 @@
             <td><?php echo $Result['Name'];?></div></td>
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
-            <td><a href="edit.php?id=<?php echo $row['id']; ?>">Edit</a>&nbsp;
-            <td><a href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
+            <td><a href="edit.php?id=<?php echo $Result['id']; ?>">Edit</a>&nbsp;
+            <td><a href="delete.php?id=<?php echo $Result['id']; ?>">Delete</a></td>
             </td>
         </tr>
     <?php
