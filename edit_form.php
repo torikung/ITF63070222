@@ -46,9 +46,13 @@ $comment = mysqli_fetch_array($res);
                     		echo '<input type="text" name="link" id="inputLink" class="form-control" placeholder="Enter Link" value="'.$comment["Link"].'">'
                 	?>
             </div>
-            <div class="mt-4">
-                <button type="submit" class="btn btn-primary mr-1">Save</button>
-                <a role="button" class="btn btn-secondary" href="show.php">Back</a>
+            <div class="container">
+		<tr>
+			<div align="center"><button type="submit" class="btn btn-dark">Save</button></div>
+		</tr>
+		<tr>
+                	<a role="button" class="btn btn-secondary" href="show.php">Back</a>
+		</tr>
             </div>
 	</div>
     </div>
