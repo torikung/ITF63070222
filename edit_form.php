@@ -47,8 +47,8 @@ $comment = mysqli_fetch_array($res);
                 	?>
             </div>
             <div class="container">
-		<div align="center"><button type="submit" class="btn btn-dark">Save</button></div>
-                <a role="button" class="btn btn-secondary" href="show.php">Back</a>
+		<div align="center"><button type="submit" class="btn btn-dark">Save</button>&nbsp;
+                <a role="button" class="btn btn-secondary" href="show.php">Back</a></div>
             </div>
 	</div>
     </div>
