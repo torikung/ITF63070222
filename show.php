@@ -37,8 +37,16 @@
             <td><?php echo $Result['Name'];?></div></td>
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
-            <td><div align="center"><button type="button" class="btn btn-light">แก้ไข</button>&nbsp;
-                <button type="button" class="btn btn-light" onclick="window.location.href='/delete.php'?name="$Result['Name'];">ลบ</button></div></td>
+            <td>
+                <div align="center">
+                    <form action="edit_form.php" method="post">
+                        <input type="hidden" name="ID" value=<?php echo $row['ID'];?>>
+                        <button type="button" class="btn btn-light">แก้ไข</button>&nbsp;
+                    <form action="delete.php" method="post" class="d-inline">
+                        <input type="hidden" name="ID" value=<?php echo $row['ID'];?>>
+                        <button type="button" class="btn btn-light">ลบ</button>
+                </div>
+            </td>
         </tr>
     <?php
         }
