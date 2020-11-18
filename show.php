@@ -40,8 +40,7 @@
             <td><?php echo $Result['Link'];?></td>
             <td>
                 <div align="center">
-                    <button type="button" class="btn btn-light">แก้ไข</button>&nbsp;
-                        <button type="submit" class="btn btn-light">ลบ</button>
+                    <button type="button" class="btn btn-light">แก้ไข</button>&nbsp;<button type="submit" class="btn btn-light">ลบ</button>
                 </div>
             </td>
         </tr>
