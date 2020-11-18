@@ -27,7 +27,7 @@
                     <th width="100"> <div align="center">Name</div></th>
                     <th width="300"> <div align="center">Comment</div></th>
                     <th width="150"> <div align="center">Link</div></th>
-                    <th width="15%"> <div align="center">Action</div></th>
+                    <th width="25%"> <div align="center">Action</div></th>
                 </tr>
             </thead>
     <?php
@@ -38,8 +38,12 @@
             <td><?php echo $Result['Name'];?></div></td>
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
-            <td><button type="button" class="btn btn-light">แก้ไข</button>&nbsp;
-                    <button type="submit" class="btn btn-light">ลบ</button></td>
+            <td><form action="edit_form.php" method="post">
+                    <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
+                    <button type="button" class="btn btn-light">แก้ไข</button></form>&nbsp;
+                <form action="delete.php" method="post">
+                    <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
+                    <button type="submit" class="btn btn-light">ลบ</button></form></td>
         </tr>
     <?php
         }
