@@ -31,21 +31,21 @@ $comment = mysqli_fetch_array($res);
             <div class="form-group row">
     		<label for="inputName" class="col-sm-2 col-form-label">Name</label>
     		<div class="col-sm-10">
-                <?php
-                    echo '<input type="text" name="name" id="inputName" class="form-control" placeholder="Enter Name" value="'.$comment["Name"].'">'
-                ?>
+                	<?php
+                    		echo '<input type="text" name="name" id="inputName" class="form-control" placeholder="Enter Name" value="'.$comment["Name"].'">'
+                	?>
             </div>
             <div class="form-group row">
     		<label for="inputComment" class="col-sm-2 col-form-label">Comment</label>
     		<div class="col-sm-10">
-                <type="text" name="comment" class="form-control" id="inputComment" placeholder="Enter Comment"><?php echo $comment['Comment'];?>
+                	<input type="text" name="comment" class="form-control" id="inputComment" placeholder="Enter Comment"><?php echo $comment['Comment'];?>
             </div>
             <div class="form-group row">
                 <label for="inputComment" class="col-sm-2 col-form-label">Link</label>
                 <div class="col-sm-10">
-                <?php
-                    echo '<input type="text" name="link" id="inputLink" class="form-control" placeholder="Enter Link" value="'.$comment["Link"].'">'
-                ?>
+                	<?php
+                    		echo '<input type="text" name="link" id="inputLink" class="form-control" placeholder="Enter Link" value="'.$comment["Link"].'">'
+                	?>
             </div>
             <div class="mt-4">
                 <button type="submit" class="btn btn-primary mr-1">Save</button>
