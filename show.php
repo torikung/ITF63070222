@@ -37,13 +37,8 @@
             <td><?php echo $Result['Name'];?></div></td>
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
-            <td>
-                <div align="center">
-                    <a href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>&nbsp;
-                    <form action="delete.php" method="post">
-                        <input type="hidden" name="ID" value=<?php echo $row['ID'];?>>
-                        <button type="button" class="btn btn-light">ลบ</button>
-                </div>
+            <td><a href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>&nbsp;
+            <td><a href="delete.php?id=<?php echo $data['id']; ?>">Delete</a></td>
             </td>
         </tr>
     <?php
