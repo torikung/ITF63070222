@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+	.form {
+  		align: center;
+	}
+</style>
     	<title>Edited Form</title>
 	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,19 +34,19 @@ $comment = mysqli_fetch_array($res);
             <input type="hidden" name="ID" value=<?php echo $comment['ID'];?>>
             <div class="form-group row">
     		<label for="inputName" class="col-sm-2 col-form-label">Name</label>
-    		<div class="col-sm-10">
+    		<div class="col-sm-10", "form">
                 	<?php
                     		echo '<input type="text" name="name" id="inputName" class="form-control" placeholder="Enter Name" value="'.$comment["Name"].'">'
                 	?>
             </div>
             <div class="form-group row">
     		<label for="inputComment" class="col-sm-2 col-form-label">Comment</label>
-    		<div class="col-sm-10">
+    		<div class="col-sm-10", "form">
                 	<textarea name="comment" class="form-control" id="inputComment" row="3" placeholder="Enter Comment"><?php echo $comment['Comment'];?></textarea>
             </div>
             <div class="form-group row">
                 <label for="inputComment" class="col-sm-2 col-form-label">Link</label>
-                <div class="col-sm-10">
+                <div class="col-sm-10", "form">
                 	<?php
                     		echo '<input type="text" name="link" id="inputLink" class="form-control" placeholder="Enter Link" value="'.$comment["Link"].'">'
                 	?>
