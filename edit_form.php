@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+	.form {
+  		align: center;
+	}
+</style>
     	<title>Edited Form</title>
 	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +29,7 @@ $res = mysqli_query($conn, $sql);
 $comment = mysqli_fetch_array($res);
 ?>
 <form action="edit.php" method="post" class="mt-4">
-    <div class="container">
+    <div class="container","form">
         <div align="center"><h1>Edit comment</h1></div>
             <input type="hidden" name="ID" value=<?php echo $comment['ID'];?>>
             <div class="form-group row">
