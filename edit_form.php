@@ -27,6 +27,7 @@ $comment = mysqli_fetch_array($res);
         <div align="center"><h1>Edit comment</h1></div>
         <form action="edit.php" method="post" class="mt-4">
             <input type="hidden" name="ID" value=<?php echo $comment['ID'];?>>
+	<div align="center">
             <div class="form-group row">
     		<label for="inputName" class="col-sm-2 col-form-label">Name</label>
     		<div class="col-sm-10">
@@ -37,7 +38,7 @@ $comment = mysqli_fetch_array($res);
             <div class="form-group row">
     		<label for="inputComment" class="col-sm-2 col-form-label">Comment</label>
     		<div class="col-sm-10">
-                <type="comment" name="comment" class="form-control" id="inputComment" placeholder="Enter Comment"><?php echo $comment['Comment'];?>
+                <type="text" name="comment" class="form-control" id="inputComment" placeholder="Enter Comment"><?php echo $comment['Comment'];?>
             </div>
             <div class="form-group row">
                 <label for="inputComment" class="col-sm-2 col-form-label">Link</label>
@@ -50,6 +51,7 @@ $comment = mysqli_fetch_array($res);
                 <button type="submit" class="btn btn-primary mr-1">Save</button>
                 <a role="button" class="btn btn-secondary" href="show.php">Back</a>
             </div>
+	</div>
         </form>
     </div>
 <?php
