@@ -39,18 +39,13 @@
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
             <td>
-                <div align="center" style="width:400px;">
-                    <div style="float: left; width: 130px"> 
-                        <form action="edit_form.php" method="post">
-                            <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
-                            <button type="button" class="btn btn-light">แก้ไข</button>
-                    </div>
-                    <div style="float: right; width: 225px">
-                        </form>&nbsp;
-                        <form action="delete.php" method="post">
-                            <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
-                            <button type="submit" class="btn btn-light">ลบ</button></form>
-                    </div>
+                <div align="center">
+                    <form action="edit_form.php" method="post">
+                        <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
+                        <button type="button" class="btn btn-light">แก้ไข</button></form>&nbsp;
+                    <form action="delete.php" method="post">
+                        <input type="hidden" name="ID" value=<?php echo $Result['ID'];?>>
+                        <button type="submit" class="btn btn-light">ลบ</button></form>
                 </div>
             </td>
         </tr>
